@@ -1,10 +1,14 @@
-
-
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
     background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+        flex-direction: column;
+}
 
+main {
+    flex-grow: 1;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -19,6 +23,12 @@ ul, ol {
 
 img {
     display: block;
+    max-width: 100%;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .container {
@@ -45,11 +55,15 @@ img {
 /* header menu */
 
 header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    border-bottom: 1px solid #e7e9fc;
+    display: flex;
+    align-items: center;
+    margin: 0 156px;
 }
 
 .header-logo {
+    display: flex;
+    /* align-items: center; */
     font-family: "Raleway", sans-serif;
     font-weight: 700;
         font-size: 18px;
@@ -58,10 +72,23 @@ header {
         text-transform: uppercase;
         color: #4d5ae5;
         text-decoration: none;
-}
+        padding: 24px 0;
+        margin-right: 76px;
+    }
 
 .logo-contrast {
     color: #2e2f42;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    /* margin: 0 156px; */
 }
 
 .header-menu-list {
@@ -72,10 +99,25 @@ header {
         color: #2e2f42;
         text-decoration: none;
         list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-right: 332px;
+}
+
+.header-menu-item {
+
+}
+
+.header-contact-list {
+    display: flex;
+    justify-items: center;
+    gap: 40px;
 }
 
 .header-menu-link {
     color: #2e2f42;
+    padding: 24px 0;
 }
 
 .header-menu-link:hover,
@@ -100,6 +142,7 @@ header {
 
 .header-contact-link {
     color:#434455;
+    padding: 24px 0;
 }
 
 .header-contact-link:hover,
@@ -111,6 +154,8 @@ color: #404bbf;
 
 .hero {
     background-color: #2e2f42;
+                padding-top: 188px;
+                    padding-bottom: 188px;
 }
 
 .hero-title {
@@ -120,8 +165,9 @@ color: #404bbf;
         letter-spacing: 0.02em;
         text-align: center;
         color: #fff;
-            padding-top: 188px;
-            padding-bottom: 292px;
+            max-width: 496px;
+            margin: 0 auto;
+            margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -132,7 +178,12 @@ color: #404bbf;
         color: #fff;
             background: #4d5ae5;
             cursor: pointer;
-        
+            display: block;
+            margin: 0 auto;
+            border-radius: 4px;
+                min-width: 169px;
+                height: 56px;
+        border: 0;
 }
 
 .hero-btn:hover {
@@ -162,8 +213,14 @@ background-color: #404BBF;
         color: #434455;
 }
 
+.advantages-item {
+width: calc((100%-72px)/4);
+}
+
 .advantages-list {
     list-style: none;
+    display: flex;
+    /* width: calc((100%-72px)/4); */
 }
 
 /* team */
