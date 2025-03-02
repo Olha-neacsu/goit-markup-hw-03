@@ -233,11 +233,6 @@ width: calc((100%-72px)/4);
     background: #f4f4fd;
 }
 
-.team-wrapper {
-    display: flex;
-    align-items: center;
-}
-
 .team-list {
     list-style: none;
     display: flex;
